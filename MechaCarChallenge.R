@@ -23,8 +23,7 @@ t.test(subset_lot2$PSI, mu=1500)
 subset_lot3 <- subset(coil, coil$Manufacturing_Lot=='Lot3')
 t.test(subset_lot3$PSI, mu=1500)
 
-#t.test(coil$PSI, subset=Manufacturing_Lot=='Lot2', mu=1500) #t-test for lot 2
-#t.test(coil$PSI, subset=Manufacturing_Lot=='Lot3', mu=1500) #t-test for lot 3
+
 
 
 
