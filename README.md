@@ -2,6 +2,7 @@
 
 ## Overview
 Two datasets were reviewed: 
+
 The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCars. The MechaCar prototypes were produced using multiple design specifications to identify ideal vehicle performance.
 
 The Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
@@ -37,15 +38,19 @@ The design specifications for the MechaCar suspension coils dictate that the var
 A t-test statistical analysis was conducted for the population data for the MechaCar suspension coils data. The null hypothesis for the t-test is that there is no statistical difference between the observed sample mean and its presumed population mean. Additionally, the mu or the true value of the mean was set as 1500.
 
 ![T-Test Population](Images/t-test1.png)
+
 The p-value is 0.06028. Assuming a significance level of 0.05, the p-value is greater than the significance level. Therefore, we fail to reject the null hypothesis. The two means are statistically similar. 
 
 ![T-Test Lot 1](Images/t-test2.png)
+
 Within the t.test() function, a subset was used to specify the manufacturing lot of Lot 1. The p-value is 1, which is the maximum range of a p-value. The mean for Lot 1 is 1500; therefore, the two means are equal to one another. 
 
 ![T-Test Lot 2](Images/t-test3.png)
+
 Within the t.test() function, a subset was used to specify the manufacturing lot of Lot 2. The p-value is 0.6072. Assuming a significance level of 0.05, the p-value is greater than the significance level. Therefore, we fail to reject the null hypothesis. The two means are statistically similar. 
 
 ![T-Test Lot 3](Images/t-test4.png)
+
 Within the t.test() function, a subset was used to specify the manufacturing lot of Lot 3. The p-value is 0.04168. Assuming a significance level of 0.05, the p-value is less than the significance level. Therefore, we can reject the null hypothesis. The two means are not statistically similar.
 
 ## Study Design: MechaCar vs Competition
