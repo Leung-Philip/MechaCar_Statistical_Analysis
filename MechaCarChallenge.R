@@ -12,16 +12,15 @@ lot_summary <- coil %>% group_by(Manufacturing_Lot) %>%summarize(Mean=mean(PSI),
 
 #Deliverable 3
 t.test(coil$PSI, mu=1500)#t-test for population mean
-#t.test(formula = PSI ~ Manvufacturing_Lot, data=coil, subset(coil, Manufacturing_Lot=='Lot1'), mu=1500) #t-test for lot 1
-subset_lot1 <- subset(coil, coil$Manufacturing_Lot=='Lot1')
-t.test(subset_lot1$PSI, mu=1500)
 
-subset_lot2 <- subset(coil, coil$Manufacturing_Lot=='Lot2')
-t.test(subset_lot2$PSI, mu=1500)
+subset_lot1 <- subset(coil, coil$Manufacturing_Lot=='Lot1') #subset Lot 1
+t.test(subset_lot1$PSI, mu=1500) #t-test for Lot 1
 
+subset_lot2 <- subset(coil, coil$Manufacturing_Lot=='Lot2') #subset Lot 2
+t.test(subset_lot2$PSI, mu=1500) #t-test for Lot 2
 
-subset_lot3 <- subset(coil, coil$Manufacturing_Lot=='Lot3')
-t.test(subset_lot3$PSI, mu=1500)
+subset_lot3 <- subset(coil, coil$Manufacturing_Lot=='Lot3') #subset Lot 3
+t.test(subset_lot3$PSI, mu=1500) #t-test for Lot 3
 
 
 
